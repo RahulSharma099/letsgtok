@@ -1,0 +1,15 @@
+.footer span{
+    margin:1% 5%;   
+    font-size: xx-large;
+}
+.footer p:nth-child(2){
+    font-weight: 400;
+    font-size: 130%;
+}
+.footer p:last-child{
+    font-size: 80%;
+}
+.footer{
+    margin-top: 10%;
+    padding: 5%;
+}
