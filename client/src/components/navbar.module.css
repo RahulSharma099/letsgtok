@@ -1,0 +1,10 @@
+.navbar{
+    padding: 1% 10%;
+}
+.navbar div > a{
+    font-size: x-large;
+    font-weight: 600;
+}
+.link{
+    color:#000
+}
