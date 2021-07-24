@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import styles from './home.module.css';
 import contentImg from '../assets/lets_gtok_layout.png';
+import ContactForm from './ContactForm';
 
 function Home() {
   const [tab, setTab] = useState('share');
@@ -77,6 +78,7 @@ function Home() {
         <img src="https://letsgtok.com/static/media/world_map.23aad2fc.svg" alt="" />
       </div>
       <button className={`${styles.headBtn} btn`}>Join Now</button>
+      <ContactForm />
     </div>
   );
 }
