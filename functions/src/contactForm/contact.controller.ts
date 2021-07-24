@@ -2,6 +2,7 @@ import { Request, Response, NextFunction } from 'express';
 import { errors } from '../error/error.constants';
 import { getFirestoreInstance } from '../services/firebase.service';
 import { contactSchema, Contact } from './contact.schema';
+import { sendEmailMessage } from '../services/sendGrid.service';
 
 // 👽 Handler function to submit contact form data
 export const submitFormData = async (req: Request, res: Response, next: NextFunction) => {
@@ -13,6 +14,8 @@ export const submitFormData = async (req: Request, res: Response, next: NextFunc
     }
 
     await db.collection('formData').add(formData);
+
+    sendEmailMessage(req.body.email as string);
     res.status(201).json({
       success: true,
       message: '✔ Submitted Sucessfully',
