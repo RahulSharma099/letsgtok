@@ -1,0 +1,157 @@
+.head img {
+  width: 80%;
+  margin-left: 5%;
+}
+.home {
+  overflow-x: hidden;
+}
+.head div:first-child {
+  padding: 3% 6%;
+}
+.head {
+  background-color: #fdfcff;
+}
+.tabs,
+.contentDiv {
+  margin-top: 2%;
+}
+.head h1 {
+  font-size: 500%;
+}
+.head h4 {
+  font-size: 200%;
+  font-weight: 400;
+  margin-top: -3%;
+}
+.head p {
+  font-size: 120%;
+  font-weight: 400;
+  margin: 7% 0 15%;
+}
+.headBtn:hover {
+  background-color: #492296;
+  color: #fff;
+}
+.show {
+  display: block;
+}
+.tabShow {
+  border: 2px solid #6b30e2 !important;
+}
+.hide {
+  display: none;
+}
+.contentDiv p {
+  width: 50%;
+  padding: 5%;
+  box-shadow: 1px 1px 24px 5px rgba(0, 0, 0, 0.2);
+  -webkit-box-shadow: 1px 1px 24px 5px rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: 1px 1px 24px 5px rgba(0, 0, 0, 0.2);
+}
+.tabs p {
+  padding: 6% 10%;
+  border-radius: 16px;
+  cursor: pointer;
+  margin: 3%;
+  font-size: 130%;
+  border: 1px solid transparent;
+  width: max-content;
+  box-shadow: 1px 1px 24px 5px rgba(0, 0, 0, 0.2);
+  -webkit-box-shadow: 1px 1px 24px 5px rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: 1px 1px 24px 5px rgba(0, 0, 0, 0.2);
+}
+.tabs {
+  margin: 8% 0 5%;
+}
+.heading {
+  font-size: 250%;
+  color: #6b30e2;
+  letter-spacing: 1px;
+  margin: 8% 0 3%;
+}
+.imgs {
+  position: relative;
+}
+.imgs img:first-child {
+  position: absolute;
+  top: -5%;
+  left: 4%;
+  z-index: 100;
+  -webkit-animation: fadeAnimation 5s infinite;
+  -moz-animation: fadeAnimation 5s infinite;
+  -o-animation: fadeAnimation 5s infinite;
+  animation: fadeAnimation 5s infinite;
+}
+@keyframes fadeAnimation {
+  0% {
+    opacity: 1;
+    transform: translate(0, 0);
+  }
+  50% {
+    opacity: 0;
+    transform: scale(0.8, 0.8);
+  }
+  100% {
+    opacity: 1;
+    transform: translate(0, 0);
+  }
+}
+.headBtn {
+  font-size: 130%;
+  padding: 3% 10%;
+  border-radius: 28px;
+  margin-bottom: 5%;
+  font-weight: 500;
+  background-color: #6b30e2;
+  color: #fff;
+}
+.home > .headBtn {
+  padding: 0.5% 5%;
+}
+
+@media (max-width: 900px) {
+  .head {
+    flex-direction: column-reverse;
+    padding-top: 5%;
+    text-align: center;
+  }
+  .head > div {
+    text-align: center !important;
+  }
+  .head h1 {
+    font-size: 300%;
+    margin-top: 5%;
+  }
+  .head h4 {
+    font-size: 150%;
+    margin-top: -1%;
+  }
+  .head p {
+    font-size: 120%;
+    margin-bottom: 5%;
+  }
+  .tabs p {
+    font-size: 100%;
+    box-shadow: 1px 1px 10px 1px rgb(0 0 0 / 20%);
+  }
+  .contentDiv div img {
+    display: none;
+  }
+  .contentDiv {
+    margin: 5%;
+    width: 90%;
+    padding: 5%;
+  }
+  .contentDiv p {
+    width: 100%;
+  }
+  .heading {
+    font-size: 150%;
+  }
+  .imgs > img {
+    width: 100vw;
+  }
+  .imgs img:first-child {
+    left: 0%;
+  }
+}
